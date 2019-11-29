@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    height: 100%;
+
+}
+
+.main {
+    position: relative;
+}
+
+/* canvas画板操作按钮区域 start */
+.main .canvasbox {
+    width: 100%;
+    height: 1rem;
+
+}
+
+/* canvas画板未生成操作区域 start */
+.main .operate-title-box {
+    /* position: fixed;
+  top: 0; */
+    width: 100%;
+    margin-left: 0.5rem;
+
+}
+
+.operate-title-box span {
+    margin-top: 0.2rem;
+    display: inline-block;
+    font-size: 0.44rem;
+    font-family: MicrosoftYaHeiHeavy;
+    color: rgba(50, 50, 50, 1);
+    font-weight: bold;
+}
+
+.main .canvasbox .start-canvas {
+    position: fixed;
+    top: 0;
+    right: 0.5rem;
+    width: 1.2rem;
+    height: 1rem;
+    z-index: 30;
+}
+
+.hasBottom {
+    border-bottom: 1px solid rgba(72, 130, 255, 0.2);
+}
+
+/* canvas画板未生成操作区域 end */
+/* canvas画板生成后操作区域 start */
+
+.main .operate-box {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+
+    font-size: 0.28rem;
+    z-index: 30;
+}
+
+.main .canvas-operate-box {
+    position: fixed;
+    top: 0;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 7.5rem;
+    height: 0.9rem;
+    line-height: 1rem;
+    background: #fff;
+    z-index: 30;
+    border-bottom: 1px solid rgba(72, 130, 255, 0.2);
+}
+
+.main .clear-button {
+    margin-right: 0.64rem;
+    color: #4882FF;
+}
+
+#board {
+    position: absolute;
+    z-index: 10;
+}
+
+.page-button {
+    position: fixed;
+    right: 0;
+    width: 1.2rem;
+    bottom: 2rem;
+    z-index: 30;
+}
+
+.page-button img {
+    width: 1.2rem;
+}
+
+/* canvas画板生成后操作区域 end */
+/* canvas画板操作按钮区域 end */
+
+/* 问题内容区域 start */
+.textContentbox {
+    /* margin-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.4rem;
+    padding-bottom: 1rem;
+}
+
+.question-box {
+    margin-bottom: 0.48rem;
+    padding: 0.32rem;
+    width: 6.38rem;
+    background-color: #fff;
+    box-shadow: 0rem 0.08rem 0.4rem 0rem rgba(235, 235, 235, 1);
+    border-radius: 0.16rem;
+}
+
+.require-question {
+    margin-top: 0.16rem;
+    margin-bottom: 0.32rem;
+
+    width: 6.38rem;
+    color: #969696;
+    font-size: 0.28rem;
+    font-family: PingFangSC-Regular;
+
+}
+
+.question-title-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.question-title-box img {
+    margin-top: 0.02rem;
+    margin-right: 0.16rem;
+    width: 0.25rem;
+    height: 0.25rem;
+
+}
+
+.question-title-box span {
+
+    font-size: 0.32rem;
+
+}
+
+.check-box {
+    font-size: 0.32rem;
+    color: #696969;
+}
+
+.check-option-box {
+    position: relative;
+}
+
+.check-option-box .option {
+    display: inline-block;
+    position: absolute;
+    top: 0.15rem;
+}
+
+.check-option-box .option-content {
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+    word-break: break-all;
+    width: 5rem;
+
+}
+
+/* 问题内容区域 end */
+
+
+/* 倒计时区域  start */
+
+.bottom-box {
+    position: fixed;
+    bottom: 0;
+    padding: 0.16rem 0.4rem;
+    height: 1.12rem;
+    width: 7.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0rem -0.08rem 0.16rem 0rem rgba(211, 211, 211, 0.4);
+    background: #fff;
+    /* line-height: 0.8rem; */
+    font-size: 0.3rem;
+    color: #696969;
+    z-index: 30;
+}
+
+.bottom-box img {
+    width: 0.3rem;
+    vertical-align: -0.06rem;
+}
+
+.cutdown {
+    margin-left: 0.1rem;
+}
+
+.bottom-right-box {
+    width: 2.84rem;
+    height: 0.8rem;
+    background: linear-gradient(270deg, rgba(51, 123, 255, 1) 0%, rgba(79, 209, 255, 1) 100%);
+    box-shadow: 0rem 0.08rem 0.2rem 0rem rgba(63, 160, 255, 0.35);
+    border-radius: 0.4rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+.last-icon {
+    position: fixed;
+    bottom: 3rem;
+    right: 0;
+    width: 1.5rem;
+    z-index: 40;
+}
